@@ -23,10 +23,12 @@ WARNING: This script is in alpha stage still. Work is going on.
 HOW TO INSTALL:
 Just download this file "security-update.sh" to a directory e.g. /foo/bar
 then do
+
 chmod 744 /foo/bar/security-update.sh
 
 HOW TO RUN:
 cd /foo/bar
+
 ./security-update.sh --help
 
 Next steps are self explanatory.
