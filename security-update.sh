@@ -60,5 +60,5 @@ fi
 echo
 echo "Also in addition to this do 'apt-get install --only-upgrade $2'"
 echo "If last command give E: Unable to locate package $2,"
-echo "Or $2 is already the newest version, then also it is OK. Just leave it."
+echo "Or $2 is already the newest version, or whatever it says then also it is OK. Just leave it."
 fi
