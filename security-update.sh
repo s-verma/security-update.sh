@@ -11,6 +11,8 @@ OPTIONS:
 --update or -u	Update data/record.
 --apply or -a	Give suggestions/commands to be run for applying security fixes.
 
+PACKAGE_NAME is name of debian source package published in debian security announcement.
+
 e.g. ./security_update.sh -a vlc
 list commands for upgrading package belonging to vlc debian source package.
 EOF
