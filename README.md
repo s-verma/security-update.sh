@@ -25,14 +25,14 @@ This script generate a local database at ~/pack_source_list2.verma and from it f
 WARNING: This script is in alpha stage still. Work is going on.
 
 HOW TO INSTALL:
-Just download this file "security-update2.sh" to a directory e.g. /foo/bar
+Just download this file "security-update3.sh" to a directory e.g. /foo/bar
 then do
 
-chmod 744 /foo/bar/security-update2.sh
+chmod 744 /foo/bar/security-update3.sh
 
 HOW TO RUN:
 cd /foo/bar
 
-./security-update2.sh --help
+./security-update3.sh --help
 
 Next steps are self explanatory.
