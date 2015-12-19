@@ -18,7 +18,10 @@ fi
 
 if [[ $1 = '--update' || $1 = '-u' ]]
 then
+if [ -e ~/pack_source_list.verma ]
+then
 rm ~/pack_source_list.verma
+fi
 
 for i in $(apt-cache show $(dpkg -l|tail -n +6|awk '{print $2}') |egrep '^Package:|^Version:|^Source:'|tr ' ' '_')
 do
