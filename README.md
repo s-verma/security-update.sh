@@ -32,3 +32,11 @@ cd /foo/bar
 ./security-update.sh --help
 
 Next steps are self explanatory.
+
+UPDATES:
+security-update2.sh is available.
+Kindly use this rather than security-update.sh.
+It is just improved version.
+Changes in this version 2:
+---No duplicates entries.
+---Search results in version 1 included packages not belonging to the required source package which is fixed now.
