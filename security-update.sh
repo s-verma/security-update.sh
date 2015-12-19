@@ -1,4 +1,4 @@
-#Copyright © Shailendra Verma
+#Copyright © Shailendra Verma (s_verma797@yahoo.in)
 #!/bin/bash
 
 if [[ $1 = '--help' ]]
