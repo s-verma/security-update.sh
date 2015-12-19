@@ -5,12 +5,12 @@ This is a bash shell script for applying debian security advisory updates on Deb
 
 Rationale:
 As Debian Sid do not have explicit security fixes for Debian Sid/Unstable version which can be applied by using 'apt-get update && apt-get upgrade' as in case of Debian Stable.
-Rather doing 'apt-get update && apt-get upgrade' upgrade every package in Debian Sid to latest one.
+Rather doing 'apt-get update && apt-get upgrade' upgrade every package in Debian Sid to latest one (if possible).
 
 Some people may like it but others may not.
 Because just like me people may like to upgrade their package only when there is security fix, otherwise they are happy with existing system. (this may be because they do not have ample bandwidth or paying charges per MB or they just don't like to mess up with their system.)
 For this Debian security announce serve the purpose.
-But it only provides info about which source package need to be updated.
+But it only provides info about which source package needs to be updated.
 
 Since each source package corresponds to several binary packages in Debian 
 e.g. run "apt-cache showsrc linux"
