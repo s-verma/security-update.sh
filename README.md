@@ -8,7 +8,7 @@ As Debian Sid do not have explicit security fixes for Debian Sid/Unstable versio
 Rather doing 'apt-get update && apt-get upgrade' upgrade every package in Debian Sid to latest one (if possible).
 
 Some people may like it but others may not.
-Because just like me people may like to upgrade their package only when there is security fix, otherwise they are happy with existing system. (this may be because they do not have ample bandwidth or paying charges per MB or they just don't like to mess up with their system.)
+Because just like me people may like to upgrade their package only when there is security fix, otherwise they are happy with existing system. (this may be because they do not have ample bandwidth or paying charges per MB or they just don't like to mess up with their existing system.)
 For this Debian security announce serve the purpose.
 But it only provides info about which source package needs to be updated.
 
@@ -16,7 +16,7 @@ Since each source package corresponds to several binary packages in Debian
 e.g. run "apt-cache showsrc linux"
 and see for yourself how many binary packages corresponds to the source package 'linux'.
 
-Since system has binary packages installed now the user has to find out which package belong to the given source package. Thus manually finding and applying update become somewhat complicated task.
+Since system has binary packages installed now the user has to find out which installed binary package belong to the given source package. Thus manually finding and applying update become somewhat complicated task.
 
 Hence for these people this script comes.
 
@@ -36,3 +36,10 @@ cd /foo/bar
 ./security-update3.sh --help
 
 Next steps are self explanatory.
+
+Just run first ./security-update3.sh -u
+to upgrade database,
+then check source packagename from debian security advisory.
+then use 
+./security-update3.sh -a packagename 
+to list all installed binary packages belonging to packagename. 
