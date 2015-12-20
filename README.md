@@ -9,14 +9,13 @@ Rather doing 'apt-get update && apt-get upgrade' upgrade every package in Debian
 
 Some people may like it but others may not.
 Because just like me people may like to upgrade their package only when there is security fix, otherwise they are happy with existing system. (this may be because they do not have ample bandwidth or paying charges per MB or they just don't like to mess up with their existing system.)
-For this Debian security announce serve the purpose.
-But it only provides info about which source package needs to be updated.
 
-Since each source package corresponds to several binary packages in Debian 
+Debian releases security advisory for any security fixes. But on Debian, packages are organized as binary packages whereas security advisory lists name of source packages.
+Each souce package is compiled into several binary package on Debian, so by just looking into Debian security advisory we can not say how many packages on system needs to be upgraded corresponding to the given source package.
+
+Hence upgrading using security advisory is cumbersome since each source package corresponds to several binary packages in Debian 
 e.g. run "apt-cache showsrc linux"
 and see for yourself how many binary packages corresponds to the source package 'linux'.
-
-Since system has binary packages installed now the user has to find out which installed binary package belong to the given source package. Thus manually finding and applying update become somewhat complicated task.
 
 Hence for these people this script comes.
 
