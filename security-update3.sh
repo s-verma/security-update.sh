@@ -55,7 +55,7 @@ echo "Check the version with Debian Security Advisory."
 echo
 for i in ${strng}
 do
-echo $(dpkg -l|egrep " ${i} | ${i}:"|awk '{print $2, $3}')
+echo $(dpkg -l|awk '{print $2, $3}'|egrep "^${i} |^${i}:")
 done
 echo 
 if [[ $strng == "" ]]
